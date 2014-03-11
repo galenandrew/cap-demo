@@ -1,5 +1,6 @@
 # Define stage for settings (Capistrano assumes this but better safe than sorry)
 set :stage, :staging
+set :branch, 'master'
 
 # Simple Role Syntax
 # ==================
