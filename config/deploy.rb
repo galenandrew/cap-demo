@@ -24,8 +24,8 @@ set :keep_releases, 3
 # Global SSH Options (shared across all stages)
 # ==================
 set :ssh_options, {
-	keys: %w(~/.ssh/pem/galenandrew.pem),
+	port: 22,
 	forward_agent: false,
 	auth_methods: %w(publickey),
-	port: 22
+	keys: %w(~/.ssh/pem/galenandrew.pem)
 }

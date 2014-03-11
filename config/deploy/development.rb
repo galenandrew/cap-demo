@@ -11,7 +11,9 @@ set :branch, 'development'
 # Extended Server Syntax (with SSH Options)
 # ======================
 # settings per server override global ssh_options
-server '54.186.89.3', user: 'ubuntu', roles: %w{web app}
+server '54.186.89.3',
+	user: 'ubuntu',
+	roles: %w{web app db}
 
 # Define deploy_to directory on server 
 # ==================
