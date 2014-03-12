@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 # Default value for :log_level is :debug
-set :log_level, :info
+# set :log_level, :info
 
 # Application Details
 # ==================
@@ -27,5 +27,5 @@ set :ssh_options, {
 	port: 22,
 	forward_agent: false,
 	auth_methods: %w(publickey),
-	keys: %w(~/.ssh/pem/galenandrew.pem)
+	keys: %w(~/.ssh/id_rsa.pub)
 }

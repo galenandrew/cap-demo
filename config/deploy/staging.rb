@@ -4,14 +4,14 @@ set :branch, 'master'
 
 # Simple Role Syntax
 # ==================
-# role :app, %w{ubuntu@54.186.89.3}
-# role :web, %w{ubuntu@54.186.89.3}
-# role :db,  %w{deploy@example.com}
+# role :app, %w{ubuntu@staging.myapp.com}
+# role :web, %w{ubuntu@staging.myapp.com}
+# role :db,  %w{ubuntu@staging.myapp.com}
 
 # Extended Server Syntax (with SSH Options)
 # ======================
 # settings per server override global ssh_options
-server '54.186.89.3',
+server 'staging.myapp.com',
 	user: 'ubuntu',
 	roles: %w{web app db}
 
